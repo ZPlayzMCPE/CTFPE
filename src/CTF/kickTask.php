@@ -14,7 +14,7 @@ class kickTask extends PluginTask{
 	}
 	
 	
-	public function onRun($currentTick){
+	public function onRun(int $currentTick){
 		if($this->player instanceof Player){
 			if(in_array($this->player->getName(), $this->getOwner()->kick)){
 				unset($this->getOwner()->compass[$id]);
